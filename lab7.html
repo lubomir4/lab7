@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Lab7 Юрчишин</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body, html {
+      margin: 0;
+      height: 100%;
+      font-family: Arial, sans-serif;
+    }
+    .container {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    .header, .footer {
+      background: gold;
+      text-align: center;
+      padding: 10px;
+      font-size: 20px;
+      flex-shrink: 0;
+    }
+    .main {
+      flex: 1;
+      display: flex;
+    }
+    .left, .right {
+      background: dodgerblue;
+      width: 20%;
+      padding: 10px;
+      color: white;
+    }
+    .content {
+      background: white;
+      width: 60%;
+      padding: 15px;
+      font-size: 14px;
+      overflow-y: auto;
+      height: 70vh; /* обмеження висоти для прокрутки */
+    }
+    .footer {
+      transform: rotate(-1.5deg);
+    }
+    .red-block {
+      background: red;
+      width: 200px;
+      height: 100px;
+      margin: 20px auto;
+      border-radius: 10px;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">1 &#9733; &#9786; &#9829; Заголовок сторінки</div>
+    <div class="main">
+      <div class="left">2<br>Меню</div>
+      <div class="content">
+        <p>
+          3<br>Ласкаво просимо на нашу інформаційну сторінку! Тут ви знайдете багато корисної інформації про сучасні технології веб-дизайну та розробки.
+        </p>
+        <p>
+          HTML і CSS — це основи створення веб-сайтів. За допомогою властивості <strong>display</strong> можна змінювати спосіб відображення елементів.
+          Наприклад, <code>display: inline-block</code> дозволяє розміщувати блоки в одному рядку.
+        </p>
+        <p>
+          Сьогодні ми працюємо з блочною версткою: створюємо шапку, бокові панелі, основний контент та футер. 
+          Це базовий, але важливий навик для кожного, хто хоче працювати у сфері Front-End розробки.
+        </p>
+        <p>
+          Також ми використали спецсимволи: &#9733; — зірка, &#9786; — усмішка, &#9829; — серце.
+        </p>
+        <p>
+          Важливо вміти створювати адаптивні, зручні та сучасні інтерфейси. Це потребує знань, практики та креативності.
+        </p>
+        <p>
+          Бажаємо успіху у навчанні та виконанні лабораторної роботи №7!
+        </p>
+
+        <div class="red-block">Тут текст</div>
+      </div>
+      <div class="right">4<br>Інше</div>
+    </div>
+    <div class="footer">5 Футер сторінки &#169; 2025</div>
+  </div>
+</body>
+</html>
